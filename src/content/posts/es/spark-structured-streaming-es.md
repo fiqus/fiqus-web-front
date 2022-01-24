@@ -10,7 +10,7 @@ imageCredits: "unsplash"
 tags: ["python", "spark", "big-data"]
 ---
 
-# Structured streaming job in Spark
+# Creando una aplicacion con Spark Structured Streaming
 ### codigo, configuraciones y consejos
 
 [Apache Spark](https://spark.apache.org/) es un framework de programación open-source para procesar datos masivos o big data, de forma distribuida, diseñado para ser rápido, y tolerante a fallas.
