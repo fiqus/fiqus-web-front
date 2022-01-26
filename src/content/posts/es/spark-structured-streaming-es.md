@@ -15,7 +15,7 @@ tags: ["python", "spark", "big-data"]
 
 [Apache Spark](https://spark.apache.org/) es un framework de programación open-source para procesar datos masivos o big data, de forma distribuida, diseñado para ser rápido, y tolerante a fallas.
 Trabaja en memoria, con lo que se consigue mucha mayor velocidad de procesamiento.
-Proporciona APIS para los lenguajes `Java, Scala, Python y R`.
+Proporciona APIs para los lenguajes `Java`, `Scala`, `Python` y `R`.
 
 Utiliza la evaluación perezosa (_lazy_), lo que significa es que todas las transformaciones que vamos realizando sobre los RDD o Dataframes, no se resuelven, si no que se van almacenando en un grafo acíclico dirigido (_llamado DAG_), y cuando ejecutamos una acción, es decir, cuando la herramienta no tenga más opción que realizar todas las transformaciones, será cuando se ejecuten
 
