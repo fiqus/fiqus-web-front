@@ -21,7 +21,7 @@ It has *Lazy* evaluation, which means any transformation made on the RDDs or Dat
 
 ![Spark ecosystem](../images/apache-spark-circulo.png)
 
-One of the newest features of Spark is the **Structured Streaming** that provides fast, scalable, fault-tolerant, end-to-end exactly-once stream processing without the user having to reason about streaming.
+One of the newest features of Spark is the [Structured Streaming](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html) that provides fast, scalable, fault-tolerant, end-to-end exactly-once stream processing without the user having to reason about streaming.
 
 
 You can express your streaming computation the same way you would express a batch computation on static data. The **Spark SQL** engine will take care of running it incrementally, continuously and updating the final result as streaming data continues to arrive. You can use the [Dataset/DataFrame](https://spark.apache.org/docs/latest/sql-programming-guide.html) API to express streaming aggregations, event-time windows, stream-to-batch joins.
