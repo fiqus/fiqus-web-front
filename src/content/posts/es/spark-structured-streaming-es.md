@@ -110,7 +110,7 @@ En el código podemos ver que en la función `.readStream`
 definimos que vamos a leer archivos del tipo parquet desde el path local en `/mydata/`
 En este ejemplo estamos leyendo desde los archivos distribuidos Hadoop (HDFS).
 
->Mas informacion acerca de HDFS:
+Más informacion acerca de HDFS:
 https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html
 
 
