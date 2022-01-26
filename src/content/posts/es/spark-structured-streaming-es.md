@@ -130,7 +130,7 @@ La definición de la carpeta `checkpoint` es importante, ya que si nuestro traba
 
 El `outputMode`  define como queremos que las ventanas sean procesadas, con el modo `append` el resultado de cada ventana es escrito una sola vez, al finalizar el periodo definido en el `Watermark`, de esta forma cada ventana escrita es siempre final ya que no se espera que más datos puedan ingresar en esa ventana. 
 
-A diferencia en el modo *update* si hay nuevos datos que entran en una ventana se re-escribe en el output la misma ventana.
+A diferencia en el modo `update` si hay nuevos datos que entran en una ventana se re-escribe en el output la misma ventana.
 Para ver que *output mode* de las ventanas estan disponibles, hay mas informacion en la [documentacion de spark](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html#output-modes)
 
 Y finalmente en la sección **foreachBatch** se puede agregar una función para ser llamada en cada iteración donde se puede manipular, agregar más información y escribir el dataframe al destino y en el formato necesario. El parametro `epoch_id` sirve para identificar unívocamente cada iteración y tener una garantia de escribir los datos una sola vez si es necesario.
