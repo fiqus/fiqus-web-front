@@ -134,7 +134,7 @@ And finally the `foreachBatch` option allows passing a function to be called on 
 
 The parameter `epoch_id` it’s an unique identifier to ensure a only-once guarantee at the moment of writing or processing the data frame.
 
-**Some useful configurations for long running jobs**
+### Some useful configurations for long running jobs
 ![image](../images/spark-defaults.png)
 
 `spark.sql.streaming.minBatchesToRetain`
