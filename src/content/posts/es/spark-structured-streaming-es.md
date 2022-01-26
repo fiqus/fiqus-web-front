@@ -128,7 +128,7 @@ creamos una ventana de tiempo sobre el campo timestamp de 24 horas (hours_window
 Para comenzar con el procesamiento debemos llamar a la función `writeStream`.
 La definición de la carpeta `checkpoint` es importante, ya que si nuestro trabajo de streaming falla o es deployado nuevamente, intentará primero iniciar el trabajo desde el último checkpoint guardado, sin tener que procesar todos los datos nuevamente; siempre y cuando no haya cambios la estructura de la query que rompan la compatibilidad con el checkpoint. De ser así, es necesario remover la carpeta *manualmente* antes de iniciar nuevamente el proceso.
 
-El **outputMode**  define como queremos que las ventanas sean procesadas, con el modo *append* el resultado de cada ventana es escrito una sola vez, al finalizar el periodo definido en el *Watermark*, de esta forma cada ventana escrita es siempre final ya que no se espera que más datos puedan ingresar en esa ventana. 
+El `outputMode`  define como queremos que las ventanas sean procesadas, con el modo `append` el resultado de cada ventana es escrito una sola vez, al finalizar el periodo definido en el `Watermark`, de esta forma cada ventana escrita es siempre final ya que no se espera que más datos puedan ingresar en esa ventana. 
 
 A diferencia en el modo *update* si hay nuevos datos que entran en una ventana se re-escribe en el output la misma ventana.
 Para ver que *output mode* de las ventanas estan disponibles, hay mas informacion en la [documentacion de spark](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html#output-modes)
