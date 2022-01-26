@@ -128,7 +128,7 @@ This will not be possible only if the structure of input data or the streaming q
 The `outputMode` defines how we want the `window` to be processed: the `append` mode will output each window only once the period is considered finished (considering the window + the watermark field).
 On the other hand, the `update` mode outputs every window each time it has new data that falls into that period.
 
->More details about *output modes* can be found [here](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html#output-modes)
+More details about `output modes` can be found [here](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html#output-modes)
 
 And finally the `foreachBatch` option allows passing a function to be called on each batch. It is possible to do manipulations, like adding more fields and writing the output to a desired location.
 
