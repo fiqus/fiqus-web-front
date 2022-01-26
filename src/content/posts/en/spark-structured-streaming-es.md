@@ -1,7 +1,7 @@
 ---
 lang: en
 type: "post"
-title: "Spark Strucutred Streaming"
+title: "Spark Structured Streaming"
 author: "Agustin Recouso"
 slug: "/spark-structured-streaming"
 date: "2022-01-24"
