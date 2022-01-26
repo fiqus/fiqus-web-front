@@ -115,7 +115,7 @@ https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html
 
 
 
-Con la definición de 
+Con la definición de:
 ```python
    F.window(
       logline_df.timestamp, f'{hours_window} hours', 
