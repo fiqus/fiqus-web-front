@@ -126,7 +126,7 @@ The `checkpoint` folder definition is very important, because if our job fails o
 
 This will not be possible only if the structure of input data or the streaming queries have changed and breaks the compatibility with the checkpoint structure. If this happens the checkpoint folder needs to be removed *manually* before launching a new job.
 The **outputMode**  defines how we want the *window* to be processed: the *append* mode will output each window only once the period is considered finished (considering the window + the watermark field).
-On the other hand, the *update* mode outputs every window each time it has new data that falls into that period.
+On the other hand, the `update` mode outputs every window each time it has new data that falls into that period.
 
 >More details about *output modes* can be found [here](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html#output-modes)
 
