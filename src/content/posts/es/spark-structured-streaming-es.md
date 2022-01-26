@@ -133,7 +133,7 @@ El `outputMode`  define como queremos que las ventanas sean procesadas, con el m
 A diferencia en el modo `update` si hay nuevos datos que entran en una ventana se re-escribe en el output la misma ventana.
 Pueden ver más información en la [documentación de spark](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html#output-modes) sobre los `output mode` de las ventanas disponibles. 
 
-Y finalmente en la sección **foreachBatch** se puede agregar una función para ser llamada en cada iteración donde se puede manipular, agregar más información y escribir el dataframe al destino y en el formato necesario. El parametro `epoch_id` sirve para identificar unívocamente cada iteración y tener una garantia de escribir los datos una sola vez si es necesario.
+Y finalmente en la sección `foreachBatch` se puede agregar una función para ser llamada en cada iteración donde se puede manipular, agregar más información y escribir el dataframe al destino y en el formato necesario. El parametro `epoch_id` sirve para identificar unívocamente cada iteración y tener una garantia de escribir los datos una sola vez si es necesario.
 
 **Algunas configuraciones útiles para trabajos que corran por mucho tiempo**
 ![image](../images/spark-defaults.png)
