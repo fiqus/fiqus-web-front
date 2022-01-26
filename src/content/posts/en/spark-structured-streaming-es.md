@@ -19,7 +19,7 @@ With APIs for `Java`, `Scala`, `Python` and `R`.
 It has *Lazy* evaluation, which means any transformation made on the RDDs or Dataframes  creates a logical flow of operations known as *Directed Acyclic Graph (DAG)* which groups operations to improve efficiency and only will execute the operations when the output is needed.
 
 
-![image](../images/apache-spark-circulo.png)
+![Spark ecosystem](../images/apache-spark-circulo.png)
 
 One of the newest features of Spark is the **Structured Streaming** that provides fast, scalable, fault-tolerant, end-to-end exactly-once stream processing without the user having to reason about streaming.
 
