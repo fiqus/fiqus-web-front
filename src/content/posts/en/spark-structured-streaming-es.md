@@ -15,7 +15,7 @@ tags: ["python", "spark", "big-data"]
 
 [Apache Spark](https://spark.apache.org/) is an open-source, distributed processing system used for big data workloads. designed to be fast and resilient.
 It utilizes in-memory caching and optimized query execution for fast queries against data of any size.
-With APIs for `Java, Scala, Python and R.`
+With APIs for `Java`, `Scala`, `Python` and `R`.
 It has *Lazy* evaluation, which means any transformation made on the RDDs or Dataframes  creates a logical flow of operations known as *Directed Acyclic Graph (DAG)* which groups operations to improve efficiency and only will execute the operations when the output is needed.
 
 
