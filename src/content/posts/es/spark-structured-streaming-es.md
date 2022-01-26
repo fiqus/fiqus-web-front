@@ -135,7 +135,7 @@ Pueden ver más información en la [documentación de spark](https://spark.apach
 
 Y finalmente en la sección `foreachBatch` se puede agregar una función para ser llamada en cada iteración donde se puede manipular, agregar más información y escribir el dataframe al destino y en el formato necesario. El parametro `epoch_id` sirve para identificar unívocamente cada iteración y tener una garantia de escribir los datos una sola vez si es necesario.
 
-**Algunas configuraciones útiles para trabajos que corran por mucho tiempo**
+### Algunas configuraciones útiles para trabajos que corran por mucho tiempo
 ![image](../images/spark-defaults.png)
 
 `spark.sql.streaming.minBatchesToRetain`
