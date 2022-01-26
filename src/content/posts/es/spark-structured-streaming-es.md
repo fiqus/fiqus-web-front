@@ -21,7 +21,7 @@ Utiliza la evaluación perezosa (_lazy_), lo que significa es que todas las tran
 
 ![image](../images/apache-spark-circulo.png)
 
-Una de las más novedades e más interesantes funcionalidades de Spark es el **Structured Streaming**, que permite procesar datos de forma escalable, tolerante a fallos y continua.
+Una de las más novedosas e interesantes funcionalidades de Spark es el [Structured Streaming](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html), que permite procesar datos de forma escalable, tolerante a fallos y continua.
 
 La idea de Structure Streaming es procesar la data en tiempo real como si fuera una tabla que continuamente se actualiza con los nuevos valores, y permite realizar agregaciones sobre la misma.
 Los datos deben mantener una estructura definida, y el beneficio es que se pueden realizar operaciones basadas en el tiempo para decidir si los valores se deben considerar o descartar.
