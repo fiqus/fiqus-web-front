@@ -107,7 +107,7 @@ In the code we can see that we have called `.readStream`
 to define the source where we are going to read our [parquet](https://databricks.com/glossary/what-is-parquet) files, in this case  our path is `hdfs:///mydata/`.
 In this example we are using the *Hadoop Distributed File System.*
 
->More information about HDFS:
+More information about HDFS:
 https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html
 
 And in this section
