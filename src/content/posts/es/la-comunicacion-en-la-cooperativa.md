@@ -7,7 +7,7 @@ slug: "/la-comunicacion-en-la-cooperativa"
 date: "2018-03-14"
 image:  ../images/la-comunicacion.jpg
 imageCredits: "Créditos de imagen unsplash"
-tags: ["Elixir", "Phoenix"]
+tags: ["cooperativismo"]
 ---
 
 En las **cooperativas** y más específicamente hablando de las cooperativas de software necesitamos tres herramientas principales: una computadora, conexión a Internet y la más importante, una **buena comunicación**. Lo que nos diferencia de un grupo de programadores que comparten internet es la comunicación que funciona como entramado donde realizamos nuestras actividades.
