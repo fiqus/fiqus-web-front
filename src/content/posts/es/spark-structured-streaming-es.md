@@ -11,7 +11,7 @@ tags: ["python", "spark", "big-data"]
 ---
 
 # Creando una aplicacion con Spark Structured Streaming
-### codigo, configuraciones y consejos
+### Codigo, configuraciones y consejos
 
 [Apache Spark](https://spark.apache.org/) es un framework de programación open-source para procesar datos masivos o big data, de forma distribuida, diseñado para ser rápido, y tolerante a fallas.
 Trabaja en memoria, con lo que se consigue mucha mayor velocidad de procesamiento.
