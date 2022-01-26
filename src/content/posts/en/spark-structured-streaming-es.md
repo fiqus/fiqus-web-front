@@ -158,7 +158,7 @@ A simple math to set a starting value can be the following:
 >*More useful configurations for Structure Streming jobs can be found here:*
 https://jaceklaskowski.gitbooks.io/spark-structured-streaming/content/spark-sql-streaming-properties.html
 
-**How to deploy a yarn application in EMR**
+### How to deploy a yarn application in EMR
 
 `
 aws emr add-steps --cluster-id ClusterID --steps Type=spark,Name=MyApp,Args=[--deploy-mode,cluster,--master,yarn,--conf,spark.yarn.submit.waitAppCompletion=False,--conf,spark.yarn.appMasterEnv.profile=$(profile),--py-files,s3://my-bucket/app-dependencies.zip,s3://my-bucket/my_app.py],ActionOnFailure=CONTINUE
