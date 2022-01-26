@@ -157,7 +157,7 @@ Un cálculo simple para saber qué valor utilizar sería el siguiente:
 *Más configuraciones que podrían ser útiles para trabajos de Structure Streaming pueden ser encontradas aqui*
 https://jaceklaskowski.gitbooks.io/spark-structured-streaming/content/spark-sql-streaming-properties.html
 
-**Deployar una aplicación Spark en EMR con yarn**
+### Deployar una aplicación Spark en EMR con yarn
 
 `
 aws emr add-steps --cluster-id ClusterID --steps Type=spark,Name=MyApp,Args=[--deploy-mode,cluster,--master,yarn,--conf,spark.yarn.submit.waitAppCompletion=False,--conf,spark.yarn.appMasterEnv.profile=$(profile),--py-files,s3://my-bucket/app-dependencies.zip,s3://my-bucket/my_app.py],ActionOnFailure=CONTINUE
