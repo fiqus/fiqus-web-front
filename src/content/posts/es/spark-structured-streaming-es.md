@@ -28,7 +28,7 @@ Los datos deben mantener una estructura definida, y el beneficio es que se puede
 
 
 Como ejemplo, para un proyecto debimos realizar unos cálculos en una ventana de las últimas 24 horas (sliding window), agregando los valores nuevos recibidos y descartando los viejos para obtener unas métricas que se actualizan cada 5 minutos.
-Para esto utilizamos la funcionalidad de Structure Streaming de Spark corriendo en un EMR cluster en AWS.
+Para esto utilizamos la funcionalidad de Structured Streaming de Spark corriendo en un EMR cluster en AWS.
 
 
 
@@ -154,7 +154,7 @@ Esto indica cuanto paralelismo puede tener un trabajo, lo cual depende del hardw
 Un cálculo simple para saber qué valor utilizar sería el siguiente:
 `spark.default.parallelism = spark.executor.instances * spark.executors.cores * 2 (or 3)`
 
-*Más configuraciones que podrían ser útiles para trabajos de Structure Streaming pueden ser encontradas aqui*
+*Más configuraciones que podrían ser útiles para trabajos de Structured Streaming pueden ser encontradas aqui*
 https://jaceklaskowski.gitbooks.io/spark-structured-streaming/content/spark-sql-streaming-properties.html
 
 **Deployar una aplicación Spark en EMR con yarn**
@@ -173,4 +173,4 @@ Podemos pasar variables de entorno a la aplicación para su ejecución, como por
 
 `PROFILE = os.getenv('profile', 'staging')`
 
-**Spark structure streaming** es una gran herramienta pero requiere esfuerzo y conocimiento para poder obtener resultados satisfactorios. Esperamos que les sirva a los nuevos aventurados en el tema.
+**Spark structured streaming** es una gran herramienta pero requiere esfuerzo y conocimiento para poder obtener resultados satisfactorios. Esperamos que les sirva a los nuevos aventurados en el tema.

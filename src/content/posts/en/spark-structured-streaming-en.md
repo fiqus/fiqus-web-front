@@ -28,7 +28,7 @@ You can express your streaming computation the same way you would express a batc
 
 
 For a project we had to make metrics over the last 24 hours period reading incoming log lines, sum the new ones and discarding the old ones and outputting the metrics every ~5 minutes.
-For solving this problem we used **Structure Streaming** running on an AWS EMR Cluster.
+For solving this problem we used **Structured Streaming** running on an AWS EMR Cluster.
 
 
 ![image](../images/so-apache-spark-in-theory-enough-show-me-the-code.jpeg)
@@ -155,7 +155,7 @@ Tuning this configuration it’s important, as it defines how much *parallelism*
 A simple math to set a starting value can be the following:
 `spark.default.parallelism = spark.executor.instances * spark.executors.cores * 2 (or 3)`
 
->*More useful configurations for Structure Streming jobs can be found here:*
+>*More useful configurations for Structured Streming jobs can be found here:*
 https://jaceklaskowski.gitbooks.io/spark-structured-streaming/content/spark-sql-streaming-properties.html
 
 **How to deploy a yarn application in EMR**
@@ -177,4 +177,4 @@ We can send environment variables to the application, like for example the profi
 
 
 
-**Spark structure streaming** is a great tool, but requires some effort and knowledge to get good results. We hope these insights will help you in this venture.
+**Spark Structured streaming** is a great tool, but requires some effort and knowledge to get good results. We hope these insights will help you in this venture.
