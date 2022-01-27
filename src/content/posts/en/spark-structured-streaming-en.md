@@ -1,7 +1,7 @@
 ---
 lang: en
 type: "post"
-title: "Spark Strucutred Streaming"
+title: "Spark Structured Streaming"
 author: "Agustin Recouso"
 slug: "/spark-structured-streaming"
 date: "2022-01-24"
@@ -11,17 +11,17 @@ tags: ["python", "spark", "big-data"]
 ---
 
 # Creating an application with Spark Structured Streaming
-### code, configurations and considerations
+### Code, configurations and considerations
 
 [Apache Spark](https://spark.apache.org/) is an open-source, distributed processing system used for big data workloads. designed to be fast and resilient.
 It utilizes in-memory caching and optimized query execution for fast queries against data of any size.
-With APIs for `Java, Scala, Python and R.`
+With APIs for `Java`, `Scala`, `Python` and `R`.
 It has *Lazy* evaluation, which means any transformation made on the RDDs or Dataframes  creates a logical flow of operations known as *Directed Acyclic Graph (DAG)* which groups operations to improve efficiency and only will execute the operations when the output is needed.
 
 
-![image](../images/apache-spark-circulo.png)
+![Spark ecosystem](../images/apache-spark-circulo.png)
 
-One of the newest features of Spark is the **Structured Streaming** that provides fast, scalable, fault-tolerant, end-to-end exactly-once stream processing without the user having to reason about streaming.
+One of the newest features of Spark is the [Structured Streaming](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html) that provides fast, scalable, fault-tolerant, end-to-end exactly-once stream processing without the user having to reason about streaming.
 
 
 You can express your streaming computation the same way you would express a batch computation on static data. The **Spark SQL** engine will take care of running it incrementally, continuously and updating the final result as streaming data continues to arrive. You can use the [Dataset/DataFrame](https://spark.apache.org/docs/latest/sql-programming-guide.html) API to express streaming aggregations, event-time windows, stream-to-batch joins.
@@ -107,7 +107,7 @@ In the code we can see that we have called `.readStream`
 to define the source where we are going to read our [parquet](https://databricks.com/glossary/what-is-parquet) files, in this case  our path is `hdfs:///mydata/`.
 In this example we are using the *Hadoop Distributed File System.*
 
->More information about HDFS:
+More information about HDFS:
 https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html
 
 And in this section
@@ -122,19 +122,19 @@ We define a window period of 24 hours using the *timestamp* field, and sliding e
 
 To start the streaming we need to call the `writeStream` function.
 
-The **checkpoint** folder definition it’s very important, because if our job fails or gets restarted will try first to recover from the checkpointed data without having to process all the data from scratch again. 
+The `checkpoint` folder definition is very important, because if our job fails or gets restarted will try first to recover from the checkpointed data without having to process all the data from scratch again. 
 
 This will not be possible only if the structure of input data or the streaming queries have changed and breaks the compatibility with the checkpoint structure. If this happens the checkpoint folder needs to be removed *manually* before launching a new job.
-The **outputMode**  defines how we want the *window* to be processed: the *append* mode will output each window only once the period is considered finished (considering the window + the watermark field).
-On the other hand, the *update* mode outputs every window each time it has new data that falls into that period.
+The `outputMode` defines how we want the `window` to be processed: the `append` mode will output each window only once the period is considered finished (considering the window + the watermark field).
+On the other hand, the `update` mode outputs every window each time it has new data that falls into that period.
 
->More details about *output modes* can be found [here](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html#output-modes)
+More details about `output modes` can be found [here](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html#output-modes)
 
 And finally the `foreachBatch` option allows passing a function to be called on each batch. It is possible to do manipulations, like adding more fields and writing the output to a desired location.
 
 The parameter `epoch_id` it’s an unique identifier to ensure a only-once guarantee at the moment of writing or processing the data frame.
 
-**Some useful configurations for long running jobs**
+### Some useful configurations for long running jobs
 ![image](../images/spark-defaults.png)
 
 `spark.sql.streaming.minBatchesToRetain`
@@ -158,7 +158,7 @@ A simple math to set a starting value can be the following:
 >*More useful configurations for Structured Streming jobs can be found here:*
 https://jaceklaskowski.gitbooks.io/spark-structured-streaming/content/spark-sql-streaming-properties.html
 
-**How to deploy a yarn application in EMR**
+### How to deploy a yarn application in EMR
 
 `
 aws emr add-steps --cluster-id ClusterID --steps Type=spark,Name=MyApp,Args=[--deploy-mode,cluster,--master,yarn,--conf,spark.yarn.submit.waitAppCompletion=False,--conf,spark.yarn.appMasterEnv.profile=$(profile),--py-files,s3://my-bucket/app-dependencies.zip,s3://my-bucket/my_app.py],ActionOnFailure=CONTINUE

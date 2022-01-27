@@ -11,17 +11,17 @@ tags: ["python", "spark", "big-data"]
 ---
 
 # Creando una aplicacion con Spark Structured Streaming
-### codigo, configuraciones y consejos
+### Codigo, configuraciones y consejos
 
 [Apache Spark](https://spark.apache.org/) es un framework de programación open-source para procesar datos masivos o big data, de forma distribuida, diseñado para ser rápido, y tolerante a fallas.
 Trabaja en memoria, con lo que se consigue mucha mayor velocidad de procesamiento.
-Proporciona APIS para los lenguajes `Java, Scala, Python y R`.
+Proporciona APIs para los lenguajes `Java`, `Scala`, `Python` y `R`.
 
 Utiliza la evaluación perezosa (_lazy_), lo que significa es que todas las transformaciones que vamos realizando sobre los RDD o Dataframes, no se resuelven, si no que se van almacenando en un grafo acíclico dirigido (_llamado DAG_), y cuando ejecutamos una acción, es decir, cuando la herramienta no tenga más opción que realizar todas las transformaciones, será cuando se ejecuten
 
 ![image](../images/apache-spark-circulo.png)
 
-Una de las más novedades e más interesantes funcionalidades de Spark es el **Structured Streaming**, que permite procesar datos de forma escalable, tolerante a fallos y continua.
+Una de las más novedosas e interesantes funcionalidades de Spark es el [Structured Streaming](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html), que permite procesar datos de forma escalable, tolerante a fallos y continua.
 
 La idea de Structure Streaming es procesar la data en tiempo real como si fuera una tabla que continuamente se actualiza con los nuevos valores, y permite realizar agregaciones sobre la misma.
 Los datos deben mantener una estructura definida, y el beneficio es que se pueden realizar operaciones basadas en el tiempo para decidir si los valores se deben considerar o descartar.
@@ -110,12 +110,12 @@ En el código podemos ver que en la función `.readStream`
 definimos que vamos a leer archivos del tipo parquet desde el path local en `/mydata/`
 En este ejemplo estamos leyendo desde los archivos distribuidos Hadoop (HDFS).
 
->Mas informacion acerca de HDFS:
+Más informacion acerca de HDFS:
 https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html
 
 
 
-Con la definición de 
+Con la definición de:
 ```python
    F.window(
       logline_df.timestamp, f'{hours_window} hours', 
@@ -125,17 +125,17 @@ Con la definición de
 
 creamos una ventana de tiempo sobre el campo timestamp de 24 horas (hours_window), que se va a desplazar cada 5 minutos.
 
-Para comenzar con el procesamiento debemos llamar a la función `writeStream`
-La definición de la carpeta **checkpoint** es importante, ya que si nuestro trabajo de streaming falla, o es deployado nuevamente intentará primero iniciar el trabajo desde el último checkpoint guardado, sin tener que procesar todos los datos nuevamente siempre y cuando no haya cambios la estructura de la query que rompan la compatibilidad con el checkpoint. De ser así, es necesario remover la carpeta *manualmente* antes de iniciar nuevamente el proceso.
+Para comenzar con el procesamiento debemos llamar a la función `writeStream`.
+La definición de la carpeta `checkpoint` es importante, ya que si nuestro trabajo de streaming falla o es deployado nuevamente, intentará primero iniciar el trabajo desde el último checkpoint guardado, sin tener que procesar todos los datos nuevamente; siempre y cuando no haya cambios la estructura de la query que rompan la compatibilidad con el checkpoint. De ser así, es necesario remover la carpeta *manualmente* antes de iniciar nuevamente el proceso.
 
-El **outputMode**  define como queremos que las ventanas sean procesadas, con el modo *append* el resultado de cada ventana es escrito una sola vez, al finalizar el periodo definido en el *Watermark*, de esta forma cada ventana escrita es siempre final ya que no se espera que más datos puedan ingresar en esa ventana. 
+El `outputMode`  define como queremos que las ventanas sean procesadas, con el modo `append` el resultado de cada ventana es escrito una sola vez, al finalizar el periodo definido en el `Watermark`, de esta forma cada ventana escrita es siempre final ya que no se espera que más datos puedan ingresar en esa ventana. 
 
-A diferencia en el modo *update* si hay nuevos datos que entran en una ventana se re-escribe en el output la misma ventana.
-Para ver que *output mode* de las ventanas estan disponibles, hay mas informacion en la [documentacion de spark](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html#output-modes)
+A diferencia en el modo `update` si hay nuevos datos que entran en una ventana se re-escribe en el output la misma ventana.
+Pueden ver más información en la [documentación de spark](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html#output-modes) sobre los `output mode` de las ventanas disponibles. 
 
-Y finalmente en la sección **foreachBatch** se puede agregar una función para ser llamada en cada iteración donde se puede manipular, agregar más información y escribir el dataframe al destino y en el formato necesario. El parametro `epoch_id` sirve para identificar unívocamente cada iteración y tener una garantia de escribir los datos una sola vez si es necesario.
+Y finalmente en la sección `foreachBatch` se puede agregar una función para ser llamada en cada iteración donde se puede manipular, agregar más información y escribir el dataframe al destino y en el formato necesario. El parametro `epoch_id` sirve para identificar unívocamente cada iteración y tener una garantia de escribir los datos una sola vez si es necesario.
 
-**Algunas configuraciones útiles para trabajos que corran por mucho tiempo**
+### Algunas configuraciones útiles para trabajos que corran por mucho tiempo
 ![image](../images/spark-defaults.png)
 
 `spark.sql.streaming.minBatchesToRetain`
@@ -157,7 +157,7 @@ Un cálculo simple para saber qué valor utilizar sería el siguiente:
 *Más configuraciones que podrían ser útiles para trabajos de Structured Streaming pueden ser encontradas aqui*
 https://jaceklaskowski.gitbooks.io/spark-structured-streaming/content/spark-sql-streaming-properties.html
 
-**Deployar una aplicación Spark en EMR con yarn**
+### Deployar una aplicación Spark en EMR con yarn
 
 `
 aws emr add-steps --cluster-id ClusterID --steps Type=spark,Name=MyApp,Args=[--deploy-mode,cluster,--master,yarn,--conf,spark.yarn.submit.waitAppCompletion=False,--conf,spark.yarn.appMasterEnv.profile=$(profile),--py-files,s3://my-bucket/app-dependencies.zip,s3://my-bucket/my_app.py],ActionOnFailure=CONTINUE
