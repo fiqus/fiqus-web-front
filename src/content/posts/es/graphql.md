@@ -4,7 +4,7 @@ type: "post"
 title: "Conociendo Graphql"
 author: "Jeronimo Clinaz"
 slug: "/graphql"
-date: "2023-2-8"
+date: "2023-02-08"
 image:  ../images/2023_Fiqus_GraphQL_Blog_blog.jpg
 imageCredits: "unsplash"
 tags: ["GraphQL", "Apollo", "Rest"]
