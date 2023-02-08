@@ -11,7 +11,7 @@ tags: ["GraphQL"]
 ---
 # Knowing GraphQL
 
-GraphQL defines two elements::
+GraphQL defines two elements:
 
 * A query language 
 
@@ -60,7 +60,7 @@ Reasons not to use GraphQL:
 # Pros and cons
 Pros
 * GraphQL is much faster than other communication APIs because it makes it easier to reduce requests by choosing only the specific fields you want to query.
-* Complex systems and microservices. We can integrate multiple systems behind the GraphQL API. It unifies them and hides their complexity. The GraphQL server is also used to pull data from existing systems and package it into the GraphQL response format. This is very beneficial for legacy infrastructures or third-party APIs that are huge in size and difficult to maintain and manage. When we have to migrate from a monolithic backend application to a microservices architecture, the * GraphQL API can help us manage communication between multiple microservices by merging into a GraphQL schema.
+* Complex systems and microservices. We can integrate multiple systems behind the GraphQL API. It unifies them and hides their complexity. The GraphQL server is also used to pull data from existing systems and package it into the GraphQL response format. This is very beneficial for legacy infrastructures or third-party APIs that are huge in size and difficult to maintain and manage. When we have to migrate from a monolithic backend application to a microservices architecture, the GraphQL API can help us manage communication between multiple microservices by merging into a GraphQL schema.
 * Define a form of data: When we make GraphQL request to the server, it returns the response in a simple, secure and predictable form. Thus, it makes it easy for you to write a specific query according to your requirement.
 * Code sharing: We can share GraphQL fields used in multiple queries at a higher component level for reuse. This feature is known as fragments and allows you to get different data while keeping the same schema field.
 * GraphQL is a strongly typed language where each level of a GraphQL query corresponds to a particular type, and each type describes a set of available fields. Therefore, it is similar to SQL and provides descriptive error messages before executing a query.
@@ -105,7 +105,7 @@ Server:
 const { ApolloServer, gql } = require('apollo-server');
 
 
-// Definir tipos de datos y resolvers
+// Define data types and resolvers
 const typeDefs = gql`
  type User {
    id: ID!
@@ -143,7 +143,7 @@ const posts = [
 
 const resolvers = {
  Query: {
-   // En los resolvers podriamos hacer una llamada a una api de 3ros
+   // In the resolvers we could make request to 3rd API's
    user: (_, { id }) => users.find((user) => user.id === id),
    post: (_, { id }) => posts.find((post) => post.id === id),
    allUsers: () => users,
@@ -152,10 +152,10 @@ const resolvers = {
 };
 
 
-// Creamos la instancia del servidor
+// Instantiate the apollo server
 const server = new ApolloServer({ typeDefs, resolvers });
 
-// Inicializamos el servidor
+// Start the server
 server.listen().then(({ url }) => {
  console.log(`Server ready at ${url}`);
 });
