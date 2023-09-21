@@ -12,12 +12,12 @@ const Showcase = () => {
     display: flex; /* Use flexbox */
     @media (min-width: ${styles.breakpoints.m}px) {
         justify-content: center; /* Center horizontally */
-        padding-bottom: 247px;
+        padding-bottom: 167px;
     }
   `
   return (
       <ShowcaseMainContainer>
-        <iframe src={pdfUrl} width="100%" height="600"></iframe>
+        <iframe src={pdfUrl} title="showcase" width="100%" height="600"></iframe>
       </ShowcaseMainContainer>
   );
 }
