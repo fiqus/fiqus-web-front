@@ -9,9 +9,9 @@
     "gatsby"
   ],
   "scripts": {
-    "develop": "export SET NODE_OPTIONS=--openssl-legacy-provider && gatsby develop -H 0.0.0.0",
+    "develop": "gatsby develop -H 0.0.0.0",
     "start": "gatsby develop",
-    "build": "export SET NODE_OPTIONS=--openssl-legacy-provider && gatsby build",
+    "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
