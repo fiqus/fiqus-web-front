@@ -4,14 +4,7 @@ import {styles} from '../content/content.json'
 
 
 const Showcase = ({path}) => {
-  let cleanPath = path.endsWith('/') ? path.slice(0, -1) : path;
-
-  const pdfUrl = "/showcase.pdf"; 
-  if (typeof window !== `undefined`) {
-    // redirect if is window is available (client)
-    window.location.href = window.location.href.replace(cleanPath, pdfUrl)
-  }
-
+  // This should not load (hack applied to PageWrapper)
   const ShowcaseMainContainer = styled.div`
     padding-bottom: 151px;
     align-items: center; /* Center vertically */
@@ -22,9 +15,7 @@ const Showcase = ({path}) => {
     }
   `
   return (
-      <ShowcaseMainContainer>
-        <iframe src={pdfUrl} title="showcase" width="100%" height="600"></iframe>
-      </ShowcaseMainContainer>
+      <div></div>
   );
 }
 

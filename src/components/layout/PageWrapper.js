@@ -41,6 +41,19 @@ const PageWrapper = (props) => {
 
     }, [props.location])
 
+    // Hack to redirect /showcase to the showcase.pdf
+    let path = props.location.pathname
+    if (path.includes('/showcase')) {
+        let cleanPath = path.endsWith('/') ? path.slice(0, -1) : path;
+
+        const pdfUrl = "/showcase.pdf"; 
+        if (typeof window !== `undefined`) {
+          // redirect if is window is available (client)
+          window.location.href = window.location.href.replace(cleanPath, pdfUrl)
+        }
+        return (<div></div>)
+    }
+
     return (
         <StaticQuery 
         query = { graphql`
