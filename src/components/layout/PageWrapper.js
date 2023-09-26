@@ -44,12 +44,12 @@ const PageWrapper = (props) => {
     // Hack to redirect /showcase to the showcase.pdf
     let path = props.location.pathname
     if (path.includes('/showcase')) {
-        let cleanPath = path.endsWith('/') ? path.slice(0, -1) : path;
-
         const pdfUrl = "/showcase.pdf"; 
         if (typeof window !== `undefined`) {
-          // redirect if is window is available (client)
-          window.location.href = window.location.href.replace(cleanPath, pdfUrl)
+            let fullUrl = window.location.href.replace(path, pdfUrl)
+            let cleanPath = fullUrl.endsWith('/') ? fullUrl.slice(0, -1) : fullUrl;
+            // redirect if is window is available (client)
+            window.location.href = cleanPath
         }
         return (<div></div>)
     }
