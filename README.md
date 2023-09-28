@@ -24,8 +24,10 @@
     ```
     Will create or update the build folder that should be uploaded to the server. 
 
-## NOTE 🚨
-
-we have to configure the domain in setting/pages after a deploy
+## IMPORTANT 🚨 AFTER A DEPLOY: WEBSITE BREAKS, set again domain
+Go to:
+https://github.com/fiqus/fiqus-web-front/settings/pages
+and you have to fill again the "Custom domain" field with "fiqus.coop"
+and save... it will take a few seconds to do finish with a  "DNS check successful" message and website should be back working
 
 
