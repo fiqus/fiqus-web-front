@@ -1,134 +1,136 @@
 {
-    "styles" : {
-        "breakpoints" : {
-            "xs":"320",
-            "s":"481",
-            "m":"769",
-            "l":"1024",
-            "xl":"1280"
-        }, 
-        "colors" : {
-            "purplePrimary":"#510066", 
-            "purpleGradient":"#7A0185", 
-            "greenMain":"#44DC00", 
-            "orangeMain":"#FF602C",
-            "greenLight": "#E8F7E1", 
-            "purpleLight": "#E9E1EB",
-            "purpleSecondary": "#854D94", 
-            "black": "#000000", 
-            "white": "#FFFFFF", 
-            "darkMainBg":"#0F1319",
-            "darkGrey":"#60646B",
-            "darkGreyAlt":"#2F3339",
-            "ultraDarkGrey":"#333333",
-            "lightGrey":"#A7ACB4",
-            "ultraLightGrey":"#C4C4C4",
-            "transparent":"transparent"
-        }, 
-        "fontWeight" : {
-            "bold": "700",
-            "medium": "500", 
-            "light":"300", 
-            "regular":"400"
+    "styles": {
+        "breakpoints": {
+            "xs": "320",
+            "s": "481",
+            "m": "769",
+            "l": "1024",
+            "xl": "1280"
         },
-        "icon" : {
+        "colors": {
+            "purplePrimary": "#510066",
+            "purpleGradient": "#7A0185",
+            "greenMain": "#44DC00",
+            "orangeMain": "#FF602C",
+            "greenLight": "#E8F7E1",
+            "purpleLight": "#E9E1EB",
+            "purpleSecondary": "#854D94",
+            "black": "#000000",
+            "white": "#FFFFFF",
+            "darkMainBg": "#0F1319",
+            "darkGrey": "#60646B",
+            "darkGreyAlt": "#2F3339",
+            "ultraDarkGrey": "#333333",
+            "lightGrey": "#A7ACB4",
+            "ultraLightGrey": "#C4C4C4",
+            "transparent": "transparent"
+        },
+        "fontWeight": {
+            "bold": "700",
+            "medium": "500",
+            "light": "300",
+            "regular": "400"
+        },
+        "icon": {
             "website": "website.svg",
             "github": "github.svg"
         }
     },
-    
-    "homepage" : {
-        "title":"Homepage"
+    "homepage": {
+        "title": "Homepage"
     },
-
     "services": {
         "title": "Servicios",
         "tagsTitle": "Tecnologías",
-        "services":[
+        "services": [
             {
-                "id":"service_datos",
-                "tags" : [
+                "id": "service_datos",
+                "tags": [
                     "Python",
                     "Pandas",
                     "Numpy",
                     "Seaborn"
                 ],
-                "image":"datos"
+                "image": "datos"
             },
             {
-                "id":"service_inteligenciaArtificial",
-                "tags" : [
+                "id": "service_inteligenciaArtificial",
+                "tags": [
                     "TensorFlow",
                     "Spacy",
                     "Scikit-Learn"
                 ],
-                "image":"inteligenciaArtificial"
+                "image": "inteligenciaArtificial"
             },
             {
-                "id":"service_altaConcurrencia",
-                "tags" : [
+                "id": "service_altaConcurrencia",
+                "tags": [
                     "Erlang",
                     "Elixir",
-                    "Phoenix Framework", 
-                    "LiveView"
+                    "Phoenix Framework",
+                    "LiveView",
+                    "Rust"
                 ],
-                "image":"altaConcurrencia"
+                "image": "altaConcurrencia"
             },
             {
-                "id":"service_blockchain",
-                "tags" : [
+                "id": "service_blockchain",
+                "tags": [
                     "Python",
-                    "Ethereum"
+                    "Ethereum",
+                    "Solidity",
+                    "Rust"
                 ],
-                "image":"blockchain"
+                "image": "blockchain"
             },
             {
-                "id":"service_fullstack",
-                "tags" : [
+                "id": "service_fullstack",
+                "tags": [
                     "Django",
                     "Phoenix",
                     "Phoenix LiveView",
-                    "ReactJS", 
-                    "VueJS", 
-                    "React Native"
+                    "ReactJS",
+                    "VueJS",
+                    "React Native",
+                    "Nextjs"
                 ],
-                "image":"fullstack"
+                "image": "fullstack"
             }
         ],
         "subsection": {
-            "title":"Capacitación",
-            "content":"Realizamos capacitaciones técnicas y/o de cooperativismo para organizaciones, cooperativas y empresas donde buscamos transmitir de forma amena y sistematizada los conocimientos adquiridos en el ámbito tecnológico y cooperativo.",
-            "image" : "capacitacion"
+            "title": "Capacitación",
+            "content": "Realizamos capacitaciones técnicas y/o de cooperativismo para organizaciones, cooperativas y empresas donde buscamos transmitir de forma amena y sistematizada los conocimientos adquiridos en el ámbito tecnológico y cooperativo.",
+            "image": "capacitacion"
         }
-    }, 
-    "culture" : {
-            "title": "Cultura",
-            "subtitle" : "Contamos con un superpoder: ¡Ser dueñ@s de la empresa en la que trabajamos!",
-            "description":"Fiqus no es un trabajo más, es un proyecto de vida, en el que construimos un equipo consolidado de profesionales que se encuentra en continua capacitación para poder brindar soluciones técnicas de alta calidad. ",
-            "sections":{
-                "historia": {
-                    "key": "culture_historia",
-                    "content": {
-                        "column1": [
-                            "content_line1",
-                            "content_line2",
-                            "content_line3"
-                        ],
-                        "column2": [
-                            "content_line4",
-                            "content_line5"
-                        ]
-                    }
-                }, 
-                "federales": {
-                    "key": "culture_federales"
-                },
-                "facttic":  {   
-                    "key": "culture_facttic"
-                },
-                "internacional": {
-                    "key": "culture_internacional"
-                }    
+    },
+    "culture": {
+        "title": "Cultura",
+        "subtitle": "Contamos con un superpoder: ¡Ser dueñ@s de la empresa en la que trabajamos!",
+        "description": "Fiqus no es un trabajo más, es un proyecto de vida, en el que construimos un equipo consolidado de profesionales que se encuentra en continua capacitación para poder brindar soluciones técnicas de alta calidad. ",
+        "sections": {
+            "historia": {
+                "key": "culture_historia",
+                "content": {
+                    "column1": [
+                        "content_line1",
+                        "content_line2",
+                        "content_line3"
+                    ],
+                    "column2": [
+                        "content_line4",
+                        "content_line5"
+                    ]
+                }
+            },
+            "federales": {
+                "key": "culture_federales"
+            },
+            "facttic": {
+                "key": "culture_facttic"
+            },
+            "internacional": {
+                "key": "culture_internacional"
             }
         }
+    }
 }

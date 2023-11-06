@@ -18,11 +18,11 @@
         "licenseIconAlt": "Creative Commons Attribution logo"
     },
     "header": {
-      "logoAlt": "logo Fiqus",
-      "iconTogglerAlt": "icon to open menu",
-      "iconTogglerCloseAlt": "icon to close menu"  
+        "logoAlt": "logo Fiqus",
+        "iconTogglerAlt": "icon to open menu",
+        "iconTogglerCloseAlt": "icon to close menu"
     },
-    "homepage" : {
+    "homepage": {
         "title": "Homepage",
         "imageAlt": " ",
         "imageAltMobile": " ",
@@ -32,7 +32,7 @@
         "leadBold": "collective construction",
         "leadLine3": ", culture and minds in constant motion."
     },
-    "homepageCulture" : {
+    "homepageCulture": {
         "title": "Culture",
         "birdImage": "bird.svg",
         "birdImageAlt": "illustration of a bird",
@@ -43,7 +43,7 @@
         "descriptionLine2": " In which we have built a consolidated team of professionals who are in continuous training to be able to provide high quality technical solutions.",
         "btnText": "view more"
     },
-    "homepageLabs" : {
+    "homepageLabs": {
         "title": "Labs",
         "subtitle": "We train permanently!",
         "image": "homepageLabs.svg",
@@ -62,7 +62,7 @@
     },
     "button": {
         "verMas": "view more",
-        "send": "send", 
+        "send": "send",
         "read": "read"
     },
     "verMasArticulos": "view all articles",
@@ -84,11 +84,11 @@
         "title": "Services",
         "tagsTitle": "Technologies",
         "btnText": "go to services"
-    }, 
-    "service_datos":  {
+    },
+    "service_datos": {
         "service": "Data Science",
         "description": "This area is dedicated to the cleaning, extraction and analysis of data in order to feed Artificial Intelligence or Machine Learning processes. It is essential to process the data in order to make it easy to understand, as well as its use to reach the proposed goals.",
-        "tags" : [
+        "tags": [
             "Python",
             "Pandas",
             "Numpy",
@@ -97,11 +97,10 @@
         "image": "data",
         "link": " "
     },
-    "service_inteligenciaArtificial" :
-    {
+    "service_inteligenciaArtificial": {
         "service": "Artificial Intelligence",
         "description": "Machine Learning is a subfield of Artificial Intelligence in which the goal is for computers to learn. From collected and processed data, we design, build and train models that allow us to predict future events, classify images, recognize entities in text and much more.",
-        "tags" : [
+        "tags": [
             "Python",
             "Pandas",
             "Numpy",
@@ -113,21 +112,24 @@
     "service_altaConcurrencia": {
         "service": "High Concurrence",
         "description": "We use functional programming languages in real time and widely adopted in the market, which support very high levels of concurrency and distribution, producing systems that provide high speed response to high demands.",
-        "tags" : [
+        "tags": [
             "Earlang",
             "Elixir",
-            "Phoenix Framework", 
-            "LiveView"
+            "Phoenix Framework",
+            "LiveView",
+            "Rust"
         ],
         "image": "altaConcurrencia",
         "link": " "
     },
-    "service_blockchain" : {
+    "service_blockchain": {
         "service": "Blockchain | Fintech",
         "description": "We are developing fintech, which are new applications, processes, products or business models in the financial services industry composed of one or more complementary financial services that are offered to the public through the Internet.",
-        "tags" : [
+        "tags": [
             "Python",
-            "Ethereum"
+            "Ethereum",
+            "Solidity",
+            "Rust"
         ],
         "image": "blockchain",
         "link": " "
@@ -135,13 +137,14 @@
     "service_fullstack": {
         "service": "Fullstack",
         "description": "We develop web/mobile/desktop applications with different technologies to solve problems of organizations, cooperatives and companies in order to improve the efficiency of their processes.",
-        "tags" : [
+        "tags": [
             "Django",
             "Phoenix",
             "Phoenix LiveView",
-            "ReactJS", 
-            "VueJS", 
-            "React Native"
+            "ReactJS",
+            "VueJS",
+            "React Native",
+            "Nextjs"
         ],
         "image": "fullstack",
         "link": " "
@@ -149,42 +152,42 @@
     "service_subsection": {
         "title": "Training",
         "description": "We provide technical and/or cooperative training for organizations, cooperatives and companies in which we seek to share in a friendly and systematized way the knowledge obtained in the technological and cooperative fields.",
-        "image" : "capacitacion",
-        "featuredServiceImageAlt" : "Training animated image",
+        "image": "capacitacion",
+        "featuredServiceImageAlt": "Training animated image",
         "link": "servicios/#capacitacion"
     },
-    "culture" : {
+    "culture": {
         "title": "Culture",
-        "subtitle" : "We have a superpower: We own the company we work for!",
+        "subtitle": "We have a superpower: We own the company we work for!",
         "description": "Fiqus is not just another job, it is a life project, in which we have built a consolidated team of professionals who are in continuous training to provide high quality technical solutions."
-    }, 
+    },
     "culture_historia": {
         "title": "History",
-        "imageMobile" : "equipoMobile",
-        "imageAltMobile" : "equipo Fiqus",
-        "imageDesktop" : "equipoDesktop",
-        "imageAlt" : "Fiqus team",
+        "imageMobile": "equipoMobile",
+        "imageAltMobile": "equipo Fiqus",
+        "imageDesktop": "equipoDesktop",
+        "imageAlt": "Fiqus team",
         "content_line1": "Fiqus is like a big family, which started when several engineering students from the National Technological University got tired of traditional jobs and began to think of their own construction, based on different production approaches to those of the companies they had previously worked for",
         "content_line2": "After several months of preparation, the idea of building something self-managed, horizontal, democratic and collectively owned became stronger and stronger. That is how the idea of building a social enterprise was born, that is how Fiqus was born.",
         "content_line3": "Over the years, we have built an organizational structure that adapts to people and not the other way around. This is how, as we went along and based on the experience acquired, we built a series of agreements that today are part of our internal regulations. Our rules and regulations are not static, they are living things that evolve according to the evolution of the people who are part of our organization. This is where we reflect our concrete proposals to ensure that the people who participate in the collective are placed at the center of the production processes.",
         "content_line4": "We like to think that Fiqus is a proposal that invites those who are not familiar with technological cooperativism to see that a paradigm shift is possible.",
         "subtitle": "We are organized horizontally and democratically!",
-        "content_line5": "The decisions of the cooperative are made at the Ordinary General Assembly once a year. In addition, as a collective organization, twice a year we hold a meeting where we think, based on our personal desires, about our objectives as a cooperative and we meet weekly (virtually) to plan the daily tasks. "    
+        "content_line5": "The decisions of the cooperative are made at the Ordinary General Assembly once a year. In addition, as a collective organization, twice a year we hold a meeting where we think, based on our personal desires, about our objectives as a cooperative and we meet weekly (virtually) to plan the daily tasks. "
     },
     "culture_federales": {
-        "title1": "We operate at federal level!", 
-        "image" : "mapa_argentina",
-        "imageAlt" : " ",
+        "title1": "We operate at federal level!",
+        "image": "mapa_argentina",
+        "imageAlt": " ",
         "content1": "Our current distribution is the result of having created a structure malleable enough to be able to adapt to people's needs. In this way, as we have grown as people and as we have gone through the different scenarios that life has presented us with, we have prioritized accompanying the collective by providing the necessary support so that everyone can decide, for example, where and how to live.",
         "tenemosSedes": "We currently have offices in ",
         "y": "and",
-        "personasAsociadas": "But in addition, we have associates working from ", 
-        "title2": "Territorial", 
+        "personasAsociadas": "But in addition, we have associates working from ",
+        "title2": "Territorial",
         "content2": "As a worker cooperative, we understand ourselves as territorial social actors. Based on the seventh cooperative principle of 'Commitment to the Community', we assume the responsibility of extending the collective construction that we carry out day by day within the cooperative in the territory belonging to one of our locations. That is why we work actively in the Associativism Board of Villa La Angostura, Neuquén. There we meet periodically together with other actors of the social economy as well as with individuals committed to the local community to develop projects that enhance local initiatives, always with a collaborative and horizontal approach."
     },
     "culture_facttic": {
-        "title": "We are FACTTIC members!", 
-        "subtitle": "The federation is a national organization made up of technology cooperatives from all over Argentina.", 
+        "title": "We are FACTTIC members!",
+        "subtitle": "The federation is a national organization made up of technology cooperatives from all over Argentina.",
         "content_line1_part1": "It all started when the first cooperatives in the sector began to get in touch with each other because we understood that there is strength in unity to build a model that can scale with the goal of gradually becoming a real alternative to the traditional production model. As a result of these first interactions, the idea of signing a letter of commitment was born to found the ",
         "content_line1_facttic": "Argentine Federation of Technology, Innovation and Knowledge Cooperatives (FACTTIC)",
         "content_line1_part2": ", a space for collective construction that fosters solidarity and collaboration as the driving forces behind the creation of technology with cooperative values.",
@@ -192,14 +195,14 @@
         "content_line3": "The federation allows us to be in contact with other realities, allows us to break with the endogamy of our organization and invites us to think of ourselves as something bigger, covering a larger scale. It is a space of collective creation where imagination applied to collaborative construction finds no limits."
     },
     "culture_internacional": {
-        "title": "International", 
+        "title": "International",
         "content_line1": "Several years after participating in the creation of the federation, we began to contact technology cooperatives in other parts of the world with the objective of sharing the collaboration and intercooperation model built with local cooperatives on a more global scale.",
         "content_line2": "After several interactions, we made our network's first international inter-cooperative trip. We traveled to the United Kingdom to meet technology cooperatives from a local network. We shared experiences and began to build the foundations of what is now the Global Community of Technology Worker Cooperatives.",
         "content_line3": "The network brings together more than 50 technology cooperatives from around the world, with presence in 16 countries from three different continents. We share weekly meetings where we learn about our cultures, discuss our common goals and outline a roadmap to grow the community that composes it. Little by little, we begin to intercooperate with the objective of strengthening our local constructions with a global scale. In this way, organized, technology cooperatives will be able to help each other through cooperation to sell and develop projects together."
     },
-    "labs" : {
-        "title": "Labs", 
-        "subtitle": "FiqusLabs is a space where we research new technologies and train ourselves.", 
+    "labs": {
+        "title": "Labs",
+        "subtitle": "FiqusLabs is a space where we research new technologies and train ourselves.",
         "content": "In addition, learning a new technology often comes with the ability to implement a project that benefits the community or the cooperative environment."
     },
     "casos_de_exito": {
@@ -209,15 +212,15 @@
         "btnTextVerMas": "view more",
         "btnTextGithub": "go to Github"
     },
-    "blog":{
+    "blog": {
         "title": "Blog"
-    }, 
+    },
     "blogPost": {
-        "tagsTitle": "Related tags", 
-        "relatesPost": "Related articles", 
+        "tagsTitle": "Related tags",
+        "relatesPost": "Related articles",
         "verTodosBtn": "See all articles"
     },
-    "page404" : {
+    "page404": {
         "title": "Error 404",
         "descriptionLine1": "We couldn't find what you were looking for. If you need help, please contact us.",
         "descriptionLine2": "We invite you to continue browsing our site by clicking on the following button",

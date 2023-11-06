@@ -18,11 +18,11 @@
         "licenseIconAlt": "Creative Commons Attribution logo"
     },
     "header": {
-      "logoAlt": "logo Fiqus",
-      "iconTogglerAlt": "icono para abrir menú",
-      "iconTogglerCloseAlt": "icono para cerrar menú"  
+        "logoAlt": "logo Fiqus",
+        "iconTogglerAlt": "icono para abrir menú",
+        "iconTogglerCloseAlt": "icono para cerrar menú"
     },
-    "homepage" : {
+    "homepage": {
         "title": "Homepage",
         "imageAlt": " ",
         "imageAltMobile": " ",
@@ -32,7 +32,7 @@
         "leadBold": "construcción colectiva",
         "leadLine3": ", cultura y mentes en constante movimiento."
     },
-    "homepageCulture" : {
+    "homepageCulture": {
         "title": "Cultura",
         "birdImage": "bird.svg",
         "birdImageAlt": "ilustración de un pájaro",
@@ -43,7 +43,7 @@
         "descriptionLine2": " ,en el que construimos un equipo consolidado de profesionales que se encuentra en continua capacitación para poder brindar soluciones técnicas de alta calidad. ",
         "btnText": "ver más"
     },
-    "homepageLabs" : {
+    "homepageLabs": {
         "title": "Labs",
         "subtitle": "¡Nos capacitamos permanentemente!",
         "image": "homepageLabs.svg",
@@ -62,8 +62,8 @@
     },
     "button": {
         "verMas": "ver más",
-        "send": "enviar", 
-        "read":"leer"
+        "send": "enviar",
+        "read": "leer"
     },
     "verMasArticulos": "ver todos los artículos",
     "y": " y ",
@@ -84,11 +84,11 @@
         "title": "Servicios",
         "tagsTitle": "Tecnologías",
         "btnText": "ir a servicios"
-    }, 
-    "service_datos":  {
+    },
+    "service_datos": {
         "service": "Ciencia de Datos",
         "description": "Este área se dedica a la limpieza, extracción y análisis de datos con el fin de poder servir de alimento para procesos de Inteligencia Artificial o Aprendizaje Automático. Es de esencial importancia procesar los datos para lograr que sean de fácil entendimiento, así como su uso para llegar a los objetivos planteados.",
-        "tags" : [
+        "tags": [
             "Python",
             "Pandas",
             "Numpy",
@@ -97,11 +97,10 @@
         "image": "datos",
         "link": " "
     },
-    "service_inteligenciaArtificial" :
-    {
+    "service_inteligenciaArtificial": {
         "service": "Inteligencia Artificial",
         "description": "El Aprendizaje Automático es un subcampo de la Inteligencia Artificial en el que se tiene como objetivo que las \"computadoras aprendan\". A partir de datos recolectados y procesados, diseñamos, construimos y entrenamos modelos que nos permitan predecir eventos futuros, clasificar imágenes, reconocer entidades en textos y muchas otras cosas más.",
-        "tags" : [
+        "tags": [
             "Python",
             "Pandas",
             "Numpy",
@@ -113,21 +112,24 @@
     "service_altaConcurrencia": {
         "service": "Alta Concurrencia",
         "description": "Utilizamos lenguajes de programación funcional en tiempo real y muy adoptados en el mercado, que soportan niveles de altísima concurrencia y distribución, teniendo como resultado sistemas que responden a gran velocidad ante altas demandas.",
-        "tags" : [
+        "tags": [
             "Earlang",
             "Elixir",
-            "Phoenix Framework", 
-            "LiveView"
+            "Phoenix Framework",
+            "LiveView",
+            "Rust"
         ],
         "image": "altaConcurrencia",
         "link": " "
     },
-    "service_blockchain" : {
+    "service_blockchain": {
         "service": "Blockchain | Fintech",
         "description": "Estamos desarrollando fintech, que son las nuevas aplicaciones, procesos, productos o modelos de negocios en la industria de los servicios financieros compuestos de uno o más servicios financieros complementarios y puestos a disposición del público vía Internet.",
-        "tags" : [
+        "tags": [
             "Python",
-            "Ethereum"
+            "Ethereum",
+            "Solidity",
+            "Rust"
         ],
         "image": "blockchain",
         "link": " "
@@ -135,13 +137,14 @@
     "service_fullstack": {
         "service": "Fullstack",
         "description": "Desarrollamos aplicaciones web/mobile/desktop con diferentes tecnologías que permitan resolver problemáticas de organizaciones, cooperativas y empresas y poder realizar sus procesos de manera más eficiente.",
-        "tags" : [
+        "tags": [
             "Django",
             "Phoenix",
             "Phoenix LiveView",
-            "ReactJS", 
-            "VueJS", 
-            "React Native"
+            "ReactJS",
+            "VueJS",
+            "React Native",
+            "Nextjs"
         ],
         "image": "fullstack",
         "link": " "
@@ -149,42 +152,42 @@
     "service_subsection": {
         "title": "Capacitación",
         "description": "Realizamos capacitaciones técnicas y/o de cooperativismo para organizaciones, cooperativas y empresas donde buscamos transmitir de forma amena y sistematizada los conocimientos adquiridos en el ámbito tecnológico y cooperativo.",
-        "image" : "capacitacion",
-        "featuredServiceImageAlt" : "Capacitación, ilustración animada",
+        "image": "capacitacion",
+        "featuredServiceImageAlt": "Capacitación, ilustración animada",
         "link": "servicios/#capacitacion"
     },
-    "culture" : {
+    "culture": {
         "title": "Cultura",
-        "subtitle" : "Contamos con un superpoder: ¡Ser dueñ@s de la empresa en la que trabajamos!",
+        "subtitle": "Contamos con un superpoder: ¡Ser dueñ@s de la empresa en la que trabajamos!",
         "description": "Fiqus no es un trabajo más, es un proyecto de vida, en el que construimos un equipo consolidado de profesionales que se encuentra en continua capacitación para poder brindar soluciones técnicas de alta calidad. "
-    }, 
+    },
     "culture_historia": {
         "title": "Historia",
-        "imageMobile" : "equipoMobile",
-        "imageAltMobile" : "equipo Fiqus",
-        "imageDesktop" : "equipoDesktop",
-        "imageAlt" : "equipo Fiqus",
+        "imageMobile": "equipoMobile",
+        "imageAltMobile": "equipo Fiqus",
+        "imageDesktop": "equipoDesktop",
+        "imageAlt": "equipo Fiqus",
         "content_line1": "Fiqus es como una gran familia, que comenzó cuando varios estudiantes de ingeniería en sistemas de la Universidad Tecnológica Nacional se cansaron de los trabajos tradicionales y comenzaron a pensar en una construcción propia, con lógicas de producción diferentes a las de las empresas en las que habían trabajado previamente",
         "content_line2": "Luego de varios meses de gestación, la idea de construir algo autogestivo, horizontal, democrático y de propiedad colectiva se hizo cada vez más fuerte. Así es como nació la idea de construir una empresa social, así es como nació Fiqus.",
         "content_line3": "Con el transcurso de los años fuimos construyendo una estructura organizacional que se adapta a las personas y no al revés. Así es como, sobre el andar y basándonos en la experiencia adquirida, construimos una serie de acuerdos que hoy en día forman parte de nuestro reglamento interno. Nuestro reglamento no es algo estático, es algo vivo que evoluciona acorde evolucionan las personas que forman parte de nuestra organización. Ahí es donde reflejamos nuestras propuestas concretas para lograr que las personas que participan dentro del colectivo se ubiquen en el centro de los procesos productivos.",
         "content_line4": "Nos gusta pensar que Fiqus es una propuesta que invita a quienes no conocen al cooperativismo tecnológico a ver que un cambio de paradigma es posible.",
         "subtitle": "¡Nos organizamos horizontal y democráticamente!",
-        "content_line5": "Las decisiones de la cooperativa se plasman en la Asamblea General Ordinaria una vez al año. Además como forma de organización colectiva realizamos dos veces al año un encuentro donde pensamos, a partir de los deseos personales, nuestros objetivos como cooperativa y semanalmente nos encontramos (de manera virtual) a planificar las tareas diarias. "    
+        "content_line5": "Las decisiones de la cooperativa se plasman en la Asamblea General Ordinaria una vez al año. Además como forma de organización colectiva realizamos dos veces al año un encuentro donde pensamos, a partir de los deseos personales, nuestros objetivos como cooperativa y semanalmente nos encontramos (de manera virtual) a planificar las tareas diarias. "
     },
     "culture_federales": {
-        "title1": "¡Somos federales!", 
-        "image" : "mapa_argentina",
-        "imageAlt" : " ",
+        "title1": "¡Somos federales!",
+        "image": "mapa_argentina",
+        "imageAlt": " ",
         "content1": "Nuestra distribución actual es el resultado de haber creado una estructura lo suficientemente maleable como para que logre adaptarse a las necesidades de las personas. De esta manera, a medida que fuimos creciendo como personas y transitando los diferentes escenarios que la vida nos fue planteando, priorizamos acompañar desde el colectivo brindando el apoyo necesario para que todxs puedan decidir por ejemplo en dónde y cómo vivir.",
         "tenemosSedes": "En la actualidad tenemos sedes en ",
         "y": "y",
-        "personasAsociadas": "Pero además, contamos con personas asociadas trabajando desde ", 
-        "title2": "Territorial", 
+        "personasAsociadas": "Pero además, contamos con personas asociadas trabajando desde ",
+        "title2": "Territorial",
         "content2": "Como cooperativa de trabajo, nos entendemos como actores sociales territoriales. Apoyándonos en el séptimo principio cooperativo de “Compromiso con la Comunidad”, asumimos la responsabilidad de extender la construcción colectiva que realizamos día a día dentro de la cooperativa en el territorio perteneciente a una de nuestras sedes. Es por esto que trabajamos activamente en la Mesa de Asociativismo de Villa La Angostura, Neuquén. Allí nos reunimos en forma periódica junto con otros actores y actrices de la economía social así como con personas individuales comprometidas con la comunidad local para desarrollar proyectos que potencien iniciativas locales, siempre con una mirada colaborativa y horizontal."
     },
     "culture_facttic": {
-        "title": "¡Estamos federados en FACTTIC!", 
-        "subtitle": "La federación es una organización nacional que está conformada por cooperativas tecnológicas de toda Argentina.", 
+        "title": "¡Estamos federados en FACTTIC!",
+        "subtitle": "La federación es una organización nacional que está conformada por cooperativas tecnológicas de toda Argentina.",
         "content_line1_part1": "Todo comenzó cuando las primeras cooperativas del sector comenzamos a ponernos en contacto entre nosotras porque entendimos que en la unión está la fuerza para poder construir un modelo que escale con el objetivo de convertirse poco a poco en una alternativa real al modelo de producción tradicional. Producto de esas primeras interacciones nació la idea de firmar una carta de compromiso para fundar la ",
         "content_line1_facttic": "Federación Argentina de Cooperativas de Tecnología Innovación y Conocimiento (FACTTIC)",
         "content_line1_part2": ", un espacio de construcción colectiva que fomenta la solidaridad y la colaboración como motores que impulsan la creación de tecnología con valores cooperativos.",
@@ -192,14 +195,14 @@
         "content_line3": "La federación nos permite estar en contacto con otras realidades, nos permite romper con la endogamia de nuestra organización y nos invita a pensarnos como algo más grande, que abarca una escala mayor. Es un espacio de creación colectiva donde la imaginación aplicada a la construcción colaborativa no encuentra límites."
     },
     "culture_internacional": {
-        "title": "Internacional", 
+        "title": "Internacional",
         "content_line1": "Varios años después de haber participado de la creación de la federación, comenzamos a contactarnos con cooperativas tecnológicas de otras partes del mundo con el objetivo de compartir el modelo de colaboración e intercooperación construido con cooperativas locales a una escala más global.",
         "content_line2": "Luego de varias interacciones, realizamos el primer viaje intercooperativo internacional de nuestra red. Viajamos a Reino Unido para conocer a cooperativas tecnológicas de una red local. Compartimos experiencias y comenzamos a construir las bases de lo que hoy constituye la Red Global de Cooperativas de Tecnología.",
         "content_line3": "La red nuclea a más de 45 cooperativas tecnológicas de todo el mundo, con presencia en 3 continentes. Compartimos reuniones semanales en las que aprendemos de nuestras culturas, debatimos acerca de nuestros objetivos comunes y delineamos una hoja de ruta para hacer crecer a la comunidad que la compone. De a poco, comenzamos a intercooperar con el objetivo de fortalecer nuestras construcciones locales con una mirada de escala global. De esta manera, organizadas, las cooperativas de tecnología podremos ayudarnos mediante la cooperación a vender y desarrollar proyectos en conjunto."
     },
-    "labs" : {
-        "title": "Labs", 
-        "subtitle": "FiqusLabs es un espacio donde investigamos sobre nuevas tecnologías y nos capacitamos.", 
+    "labs": {
+        "title": "Labs",
+        "subtitle": "FiqusLabs es un espacio donde investigamos sobre nuevas tecnologías y nos capacitamos.",
         "content": "De yapa, muchas veces el aprendizaje de una nueva tecnología viene acompañado con poder plasmar un proyecto que beneficie a la comunidad o al ambiente cooperativo."
     },
     "casos_de_exito": {
@@ -209,15 +212,15 @@
         "btnTextVerMas": "ver más",
         "btnTextGithub": "ir a Github"
     },
-    "blog":{
+    "blog": {
         "title": "Blog"
-    }, 
+    },
     "blogPost": {
-        "tagsTitle": "Etiquetas relacionadas", 
-        "relatesPost": "Artículos relacionados", 
+        "tagsTitle": "Etiquetas relacionadas",
+        "relatesPost": "Artículos relacionados",
         "verTodosBtn": "Ver todos los artículos"
     },
-    "page404" : {
+    "page404": {
         "title": "Error 404",
         "descriptionLine1": "No pudimos encontrar lo que estabas buscando. Si necesitás ayuda contactate con nosotr@s.",
         "descriptionLine2": "Te invitamos a seguir navegando nuestro sitio tocando el siguiente botón",
@@ -225,6 +228,5 @@
         "btnHref": "/",
         "imageAlt": "ilustración árbol fiqus",
         "imageAltMobile": "ilustración árbol fiqus"
-    }   
-    
+    }
 }
