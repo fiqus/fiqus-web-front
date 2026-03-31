@@ -29,7 +29,7 @@ const PageWrapper = (props) => {
     const [ishomepage, setIsHomepage] = useState("true")
 
     // hay que cambiar los homepaths cuando se deploye al server final
-    const homePathsGHpages = ["/", "/es", "/en"]
+    const homePathsGHpages = ["/", "/es", "/en", "/es/", "/en/"]
 
     useEffect(() => {
 
@@ -73,9 +73,14 @@ const PageWrapper = (props) => {
             render={data => (
                 <Wrapper>
                     <Seo></Seo>
-                    <Header menuLinks={data.site.siteMetadata.menuLinks} location={props.location} ishomepage={ishomepage}></Header>
+                    <Header
+                        menuLinks={data.site.siteMetadata.menuLinks}
+                        location={props.location}
+                        ishomepage={ishomepage}
+                        minimal={ishomepage === "true"}
+                    ></Header>
                     <PageContainer> {props.children}</PageContainer>
-                    <Footer></Footer>
+                    {ishomepage === "true" ? null : <Footer></Footer>}
                 </Wrapper>
             )}>
 
