@@ -217,6 +217,16 @@ const Header = (props) => {
 
     }, [props.location])
 
+    if (props.minimal) {
+        return (
+            <NavWrapper ishomepage="true">
+                <LinkLogo to="/">
+                    <Logo src={darkLogo.default} alt={intl.formatMessage({id: "header.logoAlt"})} />
+                </LinkLogo>
+            </NavWrapper>
+        );
+    }
+
     return (
         <NavWrapper ishomepage={props.ishomepage}>
             <LinkLogo to="/">
