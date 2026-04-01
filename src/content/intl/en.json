@@ -225,5 +225,13 @@
         "btnHref": "/",
         "imageAlt": "illustration fiqus tree",
         "imageAltMobile": "illustration fiqus tree"
+    },
+    "mitosis": {
+        "title": "FIQUS begins a new chapter",
+        "body1": "After years of working together, Fiqus closes one cycle and gives rise to two new cooperatives:",
+        "body2": "Both carry in their origins the experience, bonds, and values built along this journey, and will continue contributing to technology development with social commitment.",
+        "body3": "We thank all the people and institutions that have been part of our story and will continue to be part of this network, now with new paths and more opportunities for collaboration.",
+        "body4": "You can find the projects we built at Fiqus on our GitHub",
+        "githubAlt": "Fiqus GitHub"
     }
 }

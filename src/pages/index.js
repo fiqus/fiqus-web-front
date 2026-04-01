@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { useIntl } from "gatsby-plugin-react-intl";
 import { styles } from "../content/content.json";
 const githubIcon = require("../images/icon_github.svg");
 
@@ -104,13 +105,13 @@ const GithubIcon = styled.img`
 `;
 
 const Index = () => {
+  const intl = useIntl();
   return (
     <Main>
       <Container>
-        <Title>FIQUS inicia una nueva etapa</Title>
+        <Title>{intl.formatMessage({id: "mitosis.title"})}</Title>
         <Body>
-          Tras años de trabajo conjunto, Fiqus cierra un ciclo y da lugar a dos
-          nuevas cooperativas:
+          {intl.formatMessage({id: "mitosis.body1"})}
         </Body>
         <LinksGrid>
           <CoopLink
@@ -129,24 +130,19 @@ const Index = () => {
           </CoopLink>
         </LinksGrid>
         <Body>
-          Ambas llevan en su origen la experiencia, los vínculos y los valores
-          construidos durante este recorrido, y seguirán aportando al desarrollo
-          de tecnología con compromiso social.
+          {intl.formatMessage({id: "mitosis.body2"})}
         </Body>
         <Body>
-          Agradecemos a todas las personas e instituciones que han acompañado
-          nuestra historia y que continuarán formando parte de esta red, ahora
-          con nuevos caminos y más oportunidades de colaboración.
+          {intl.formatMessage({id: "mitosis.body3"})}
         </Body>
         <Body>
-          Pueden encontrar los desarrollos que hicimos en Fiqus, en nuestro
-          GitHub
+          {intl.formatMessage({id: "mitosis.body4"})}
           <GithubLink
             href="https://github.com/fiqus"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <GithubIcon src={githubIcon.default} alt="GitHub de Fiqus" />
+            <GithubIcon src={githubIcon.default} alt={intl.formatMessage({id: "mitosis.githubAlt"})} />
           </GithubLink>
         </Body>
       </Container>

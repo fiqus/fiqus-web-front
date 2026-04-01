@@ -225,6 +225,13 @@
         "btnHref": "/",
         "imageAlt": "ilustración árbol fiqus",
         "imageAltMobile": "ilustración árbol fiqus"
-    }   
-    
+    },
+    "mitosis": {
+        "title": "FIQUS inicia una nueva etapa",
+        "body1": "Tras años de trabajo conjunto, Fiqus cierra un ciclo y da lugar a dos nuevas cooperativas:",
+        "body2": "Ambas llevan en su origen la experiencia, los vínculos y los valores construidos durante este recorrido, y seguirán aportando al desarrollo de tecnología con compromiso social.",
+        "body3": "Agradecemos a todas las personas e instituciones que han acompañado nuestra historia y que continuarán formando parte de esta red, ahora con nuevos caminos y más oportunidades de colaboración.",
+        "body4": "Pueden encontrar los desarrollos que hicimos en Fiqus, en nuestro GitHub",
+        "githubAlt": "GitHub de Fiqus"
+    }
 }
