@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {styles} from '../../content/content.json'
 import styled from 'styled-components'
 import { useIntl } from "gatsby-plugin-react-intl"
-import Lottie from 'react-lottie'
+import Lottie from 'lottie-react'
 import {Waypoint} from 'react-waypoint'
 import labsAnimation from '../../images/animations/labs.json'
 
@@ -132,15 +132,6 @@ const HomepageLabs = (props) => {
     const [renderLottie, setRenderLottie] = useState(false)
     const intl = useIntl();
 
-    const animationOptions= {
-        loop: false,
-        autoplay: true,
-        animationData: labsAnimation,
-        rendererSettings: {
-          preserveAspectRatio: "xMidYMid slice"
-        }
-    }
-
     return (
         <HomepageLabsContainer>
             <HomepageLabsWrapper>
@@ -175,8 +166,11 @@ const HomepageLabs = (props) => {
                     <HomepageLabsImg> 
                         <Waypoint onEnter={()=>setRenderLottie(true)}/>
                         { renderLottie && <Lottie
-                            options = {animationOptions}
-                            width = "100%"/> 
+                            animationData={labsAnimation}
+                            loop={false}
+                            autoPlay
+                            style={{width: '100%'}}
+                        /> 
                         }
                     </HomepageLabsImg>
                 </ImageContainer>

@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {styles} from '../../content/content.json'
 import styled from 'styled-components'
 import { useIntl } from "gatsby-plugin-react-intl"
-import Lottie from 'react-lottie'
+import Lottie from 'lottie-react'
 import {Waypoint} from 'react-waypoint'
 import cultureAnimation from '../../images/animations/cultura.json'
 
@@ -128,15 +128,6 @@ const HomepageCulture = (props) => {
     const [renderLottie, setRenderLottie] = useState(false)
     const intl = useIntl();
 
-    const animationOptions= {
-        loop: false,
-        autoplay: true,
-        animationData: cultureAnimation,
-        rendererSettings: {
-          preserveAspectRatio: "xMidYMid slice"
-        }
-    }
-
 
     return (
         <HomepageCultureContainer>
@@ -149,8 +140,11 @@ const HomepageCulture = (props) => {
                     <HomepageCultureImg>
                         <Waypoint onEnter={()=>setRenderLottie(true)}/>
                         { renderLottie && <Lottie
-                            options = {animationOptions}
-                            width = "100%"/> 
+                            animationData={cultureAnimation}
+                            loop={false}
+                            autoPlay
+                            style={{width: '100%'}}
+                        /> 
                         }
                     </HomepageCultureImg>
                 </ImageContainer>

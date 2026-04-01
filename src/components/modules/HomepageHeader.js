@@ -2,7 +2,7 @@ import React from 'react';
 import {styles} from '../../content/content.json'
 import styled from 'styled-components'
 import { useIntl } from "gatsby-plugin-react-intl"
-import Lottie from 'react-lottie'
+import Lottie from 'lottie-react'
 import homepageAnimation from '../../images/animations/homepage.json'
 
 const iluHomepage = require('../../images/illustrations/homepage.svg');
@@ -158,15 +158,6 @@ const SectionHeaderImgMobile = styled.img`
 const HomepageHeader = (props) => {
     const intl = useIntl();
 
-    const animationOptions= {
-        loop: false,
-        autoplay: true,
-        animationData: homepageAnimation,
-        rendererSettings: {
-          preserveAspectRatio: "xMidYMid slice"
-        }
-    }
-
     return (
         <HeaderContainer>
             <HeaderWrapper>
@@ -187,8 +178,10 @@ const HomepageHeader = (props) => {
                 <ImageContainer>
                     <SectionHeaderImg> 
                         <Lottie
-                            options = {animationOptions}
-                            width = "100%"
+                            animationData={homepageAnimation}
+                            loop={false}
+                            autoPlay
+                            style={{width: '100%'}}
                         />
                     </SectionHeaderImg>
                 </ImageContainer>

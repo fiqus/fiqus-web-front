@@ -49,13 +49,13 @@ const Body = styled.p`
 
 const LinksGrid = styled.div`
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: auto;
   gap: 14px;
   margin: 12px 0 18px;
-  justify-items: center;
+  justify-content: center;
 
   @media (min-width: ${styles.breakpoints.s}px) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
   }
 `;
 
@@ -85,7 +85,7 @@ const CoopLogo = styled.img`
   object-fit: contain;
   object-position: center center;
   margin: 0 auto;
-  transform: ${props => (props.$lawalShift ? "translateX(-18px)" : "none")};
+  padding-right: 100px;
 `;
 
 const GithubLink = styled.a`
@@ -114,22 +114,18 @@ const Index = () => {
         </Body>
         <LinksGrid>
           <CoopLink
-            href="https://farox.coop/es"
+            href="https://farox.coop"
             target="_blank"
             rel="noopener noreferrer"
           >
             <CoopLogo src="/coop-logos/LOGO%20FAROX.png" alt="Farox" />
           </CoopLink>
           <CoopLink
-            href="https://lawal.coop/"
+            href="https://lawal.coop"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <CoopLogo
-              src="/coop-logos/lawal-logo.png"
-              alt="Lawal"
-              $lawalShift
-            />
+            <CoopLogo src="/coop-logos/lawal-logo.png" alt="Lawal" />
           </CoopLink>
         </LinksGrid>
         <Body>

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { useIntl, Link } from "gatsby-plugin-react-intl"
 import data from '../../content/content.json'
 import {Waypoint} from 'react-waypoint'
-import Lottie from 'react-lottie'
+import Lottie from 'lottie-react'
 import { AnchorLink } from 'gatsby-plugin-anchor-links'
 import capacitacionAnimation from '../../images/animations/capacitacion.json'
 
@@ -285,15 +285,6 @@ const FeaturedService = (props) => {
         setPauseAnimation(true)
     }
 
-    const animationOptions= {
-        loop: true,
-        autoplay: false,
-        animationData: capacitacionAnimation,
-        rendererSettings: {
-          preserveAspectRatio: "xMidYMid slice"
-        }
-    }
-
     return (
         props.ishomepage ? 
         <FeaturedServiceContainer ishomepage={props.ishomepage} onMouseEnter={startLottie} onMouseLeave={pauseLottie}> 
@@ -309,9 +300,10 @@ const FeaturedService = (props) => {
                         >
 
                             <Lottie
-                                options = {animationOptions}
-                                width = "100%"
-                                isPaused={pauseAnimation}
+                                animationData={capacitacionAnimation}
+                                loop
+                                autoPlay={!pauseAnimation}
+                                style={{width: '100%'}}
                             />
                         </FeaturedServiceImage>
                     </ImageContainer>
@@ -331,9 +323,10 @@ const FeaturedService = (props) => {
                         alt={intl.formatMessage({id: "service_subsection.featuredServiceImageAlt"})}
                         ishomepage={props.ishomepage}>
                         <Lottie
-                            options = {animationOptions}
-                            width = "100%"
-                            isPaused={pauseAnimation}
+                            animationData={capacitacionAnimation}
+                            loop
+                            autoPlay={!pauseAnimation}
+                            style={{width: '100%'}}
                         />
                     </FeaturedServiceImage>
                 </ImageContainer>

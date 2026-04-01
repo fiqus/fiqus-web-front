@@ -9,7 +9,7 @@
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    export NODE_OPTIONS=--openssl-legacy-provider
+
     npm run develop
     ```
 

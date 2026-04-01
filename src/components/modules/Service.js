@@ -4,7 +4,7 @@ import data from '../../content/content.json'
 import Tags from '../common/Tags'
 import Button from '../common/Button'
 import { useIntl, Link } from "gatsby-plugin-react-intl"
-import Lottie from 'react-lottie';
+import Lottie from 'lottie-react';
 import { Waypoint } from 'react-waypoint';
 import { AnchorLink } from 'gatsby-plugin-anchor-links'
 
@@ -360,23 +360,12 @@ const Service = (props) => {
 
     }, [props.ishomepage])
 
-    const getAnimationOptions = (service) => {
-        return {
-            loop: true,
-            autoplay: false,
-            animationData: getServiceAnimation(service),
-            rendererSettings: {
-                preserveAspectRatio: "xMidYMid slice"
-            }
-        }
+    const pauseLottie = () => {
+        setPauseAnimation(true)
     }
 
     const startLottie = () => {
         setPauseAnimation(false)
-    }
-
-    const pauseLottie = () => {
-        setPauseAnimation(true)
     }
 
     return (
@@ -398,8 +387,10 @@ const Service = (props) => {
                         <ServiceImage
                             ishomepage={props.ishomepage}>
                             <Lottie
-                                options={getAnimationOptions(props.service.image)}
-                                width="70%"
+                                animationData={getServiceAnimation(props.service.image)}
+                                loop
+                                autoPlay
+                                style={{width: '70%'}}
                             />
                         </ServiceImage>
                     </ImageContainerMobile>
@@ -407,10 +398,10 @@ const Service = (props) => {
                         <ImageContainer ishomepage={props.ishomepage}>
                             <ServiceImage ishomepage={props.ishomepage}>
                                 <Lottie
-                                    options={getAnimationOptions(props.service.image)}
-                                    isPaused={pauseAnimation}
-
-                                    width="100%"
+                                    animationData={getServiceAnimation(props.service.image)}
+                                    loop
+                                    autoPlay={!pauseAnimation}
+                                    style={{width: '100%'}}
                                 />
                             </ServiceImage>
                         </ImageContainer>
@@ -455,8 +446,10 @@ const Service = (props) => {
                     <ServiceImage
                         ishomepage={props.ishomepage}>
                         <Lottie
-                            options={getAnimationOptions(props.service.image)}
-                            width="70%"
+                            animationData={getServiceAnimation(props.service.image)}
+                            loop
+                            autoPlay
+                            style={{width: '70%'}}
                         />
                     </ServiceImage>
                 </ImageContainerMobile>
@@ -465,8 +458,10 @@ const Service = (props) => {
                         <ServiceImage
                             ishomepage={props.ishomepage}>
                             <Lottie
-                                options={getAnimationOptions(props.service.image)}
-                                width="70%"
+                                animationData={getServiceAnimation(props.service.image)}
+                                loop
+                                autoPlay
+                                style={{width: '70%'}}
                             />
                         </ServiceImage>
                     </ImageContainer>

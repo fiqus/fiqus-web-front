@@ -3,7 +3,7 @@ import {styles} from '../../content/content.json'
 import styled from 'styled-components'
 
 import {Waypoint} from 'react-waypoint'
-import Lottie from 'react-lottie'
+import Lottie from 'lottie-react'
 
 import cultureAnimation from '../../images/animations/cultura.json'
 import labsAnimation from '../../images/animations/labs.json'
@@ -205,17 +205,6 @@ const SectionHeader = (props) => {
         }
       } 
     
-    const getAnimationOptions = (section) => {
-      return {
-        loop: false,
-        autoplay: true,
-        animationData: getSectionAnimation(section),
-        rendererSettings: {
-          preserveAspectRatio: "xMidYMid slice"
-        }
-      }
-    }
-  
     const getHeadStyles = (type) =>{
         switch (type) {
             case "cultura" : 
@@ -253,8 +242,11 @@ const SectionHeader = (props) => {
                 <ImageContainer section={props.section}>
                     <Waypoint onEnter={()=>setRenderLottie(true)}/>
                     { renderLottie && <Lottie
-                        options = {getAnimationOptions(props.section)}
-                        width = "100%"/> 
+                        animationData={getSectionAnimation(props.section)}
+                        loop={false}
+                        autoPlay
+                        style={{width: '100%'}}
+                    /> 
                     }
                 </ImageContainer>
             </HeaderWrapper>
